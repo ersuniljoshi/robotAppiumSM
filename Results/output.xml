@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160916 16:20:51.596" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/sunil/appiumDemo/robotScripts/Tests/Create_survey_demo.robot" id="s1" name="Create survey demo">
+<test id="s1-t1" name="Test_CreateSurvey">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>deviceName='Android Device'</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=5.1.1</arg>
+<arg>appPackage=com.surveymonkey</arg>
+<arg>appActivity=com.surveymonkey.login.activities.LandingActivity</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:20:57.067" starttime="20160916 16:20:51.847"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20160916 16:21:07.068" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20160916 16:21:07.068" starttime="20160916 16:20:57.067"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:21:07.069" starttime="20160916 16:20:51.846"></status>
+</kw>
+<kw name="Given User do sign in" library="KeywordFileRobotAppium">
+<kw name="Do sign in" library="createSMsurvey">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='SIGN IN']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:07.071" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='SIGN IN']'.</msg>
+<status status="PASS" endtime="20160916 16:21:07.798" starttime="20160916 16:21:07.070"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/username_input']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:07.799" level="INFO">Clicking element 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/username_input']'.</msg>
+<status status="PASS" endtime="20160916 16:21:08.497" starttime="20160916 16:21:07.798"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/username_input']</arg>
+<arg>InfoBeansP</arg>
+</arguments>
+<msg timestamp="20160916 16:21:08.498" level="INFO">Typing text 'InfoBeansP' into text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/username_input']'</msg>
+<status status="PASS" endtime="20160916 16:21:15.060" starttime="20160916 16:21:08.497"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20160916 16:21:18.061" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20160916 16:21:18.061" starttime="20160916 16:21:15.060"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>100</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:18.062" starttime="20160916 16:21:18.061"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:18.302" starttime="20160916 16:21:18.062"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:18.303" level="INFO">Clicking element 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']'.</msg>
+<status status="PASS" endtime="20160916 16:21:18.672" starttime="20160916 16:21:18.303"></status>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']</arg>
+<arg>InfoBeans!@#</arg>
+</arguments>
+<msg timestamp="20160916 16:21:18.673" level="INFO">Typing password into text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']'</msg>
+<status status="PASS" endtime="20160916 16:21:24.355" starttime="20160916 16:21:18.672"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:21:29.356" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:21:29.356" starttime="20160916 16:21:24.355"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='SIGN IN']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:29.357" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='SIGN IN']'.</msg>
+<status status="PASS" endtime="20160916 16:21:29.782" starttime="20160916 16:21:29.357"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:21:29.782" starttime="20160916 16:21:07.070"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:21:29.782" starttime="20160916 16:21:07.069"></status>
+</kw>
+<kw name="Given User is on create survey page" library="KeywordFileRobotAppium">
+<kw name="Navigate to create survey page" library="createSMsurvey">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on Create Survey</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:29.785" starttime="20160916 16:21:29.784"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:21:34.787" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:21:34.787" starttime="20160916 16:21:29.785"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>50</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:34.788" starttime="20160916 16:21:34.787"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:41.168" starttime="20160916 16:21:34.788"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button</arg>
+</arguments>
+<msg timestamp="20160916 16:21:41.168" level="INFO">Clicking element 'xpath=//android.widget.Button'.</msg>
+<status status="PASS" endtime="20160916 16:21:41.751" starttime="20160916 16:21:41.168"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:21:41.751" starttime="20160916 16:21:29.784"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:21:41.751" starttime="20160916 16:21:29.783"></status>
+</kw>
+<kw name="And User creates new survey" library="KeywordFileRobotAppium">
+<kw name="Create a new survey" library="createSMsurvey">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on new survey</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:41.753" starttime="20160916 16:21:41.753"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='New Survey']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:41.754" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='New Survey']'.</msg>
+<status status="PASS" endtime="20160916 16:21:42.936" starttime="20160916 16:21:41.754"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:42.937" starttime="20160916 16:21:42.936"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:43.358" starttime="20160916 16:21:42.937"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:43.359" level="INFO">Clear text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']'</msg>
+<status status="PASS" endtime="20160916 16:21:46.870" starttime="20160916 16:21:43.359"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']</arg>
+<arg>Survey1</arg>
+</arguments>
+<msg timestamp="20160916 16:21:46.870" level="INFO">Typing text 'Survey1' into text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']'</msg>
+<status status="PASS" endtime="20160916 16:21:52.557" starttime="20160916 16:21:46.870"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20160916 16:21:55.559" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20160916 16:21:55.560" starttime="20160916 16:21:52.558"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on create</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:55.561" starttime="20160916 16:21:55.560"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='Create']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:55.561" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Create']'.</msg>
+<status status="PASS" endtime="20160916 16:21:56.053" starttime="20160916 16:21:55.561"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:21:56.053" starttime="20160916 16:21:41.752"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:21:56.053" starttime="20160916 16:21:41.752"></status>
+</kw>
+<kw name="And User choose text type question" library="KeywordFileRobotAppium">
+<kw name="Add text ques to survey" library="texttypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on</arg>
+<arg>+</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:56.055" starttime="20160916 16:21:56.055"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:56.056" starttime="20160916 16:21:56.056"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:21:58.901" starttime="20160916 16:21:56.056"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20160916 16:21:58.902" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20160916 16:21:59.223" starttime="20160916 16:21:58.901"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20160916 16:22:02.224" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20160916 16:22:02.224" starttime="20160916 16:21:59.223"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>choose "text" type of ques.</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:02.225" starttime="20160916 16:22:02.225"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[6]/android.widget.TextView[@text='Text']</arg>
+</arguments>
+<msg timestamp="20160916 16:22:02.226" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[6]/android.widget.TextView[@text='Text']'.</msg>
+<status status="PASS" endtime="20160916 16:22:03.185" starttime="20160916 16:22:02.225"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:03.186" starttime="20160916 16:21:56.055"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:03.186" starttime="20160916 16:21:56.054"></status>
+</kw>
+<kw name="And User creates text ques survey" library="KeywordFileRobotAppium">
+<kw name="text survey is created" library="texttypequestion">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:03.188" starttime="20160916 16:22:03.187"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter 1st ques single text type</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:03.188" starttime="20160916 16:22:03.188"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:03.890" starttime="20160916 16:22:03.189"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>A survey about Infobeans</arg>
+</arguments>
+<msg timestamp="20160916 16:22:03.891" level="INFO">Typing text 'A survey about Infobeans' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:22:09.775" starttime="20160916 16:22:03.890"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on save</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:09.776" starttime="20160916 16:22:09.775"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20160916 16:22:09.776" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20160916 16:22:11.025" starttime="20160916 16:22:09.776"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:11.073" starttime="20160916 16:22:03.187"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:11.073" starttime="20160916 16:22:03.186"></status>
+</kw>
+<kw name="And User choose comment type question" library="KeywordFileRobotAppium">
+<kw name="Add comment ques to survey" library="commenttypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:11.075" starttime="20160916 16:22:11.074"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:11.075" starttime="20160916 16:22:11.075"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:13.100" starttime="20160916 16:22:11.076"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20160916 16:22:13.100" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20160916 16:22:13.519" starttime="20160916 16:22:13.100"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:13.520" starttime="20160916 16:22:13.520"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>choose Comment type of ques</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:13.521" starttime="20160916 16:22:13.521"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Comment Box']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:14.572" starttime="20160916 16:22:13.521"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Comment Box']</arg>
+</arguments>
+<msg timestamp="20160916 16:22:14.573" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Comment Box']'.</msg>
+<status status="PASS" endtime="20160916 16:22:15.074" starttime="20160916 16:22:14.572"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:15.074" starttime="20160916 16:22:11.074"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:15.074" starttime="20160916 16:22:11.073"></status>
+</kw>
+<kw name="And User creates comment type survey" library="KeywordFileRobotAppium">
+<kw name="comment survey is created" library="commenttypequestion">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:15.076" starttime="20160916 16:22:15.075"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter 2nd ques comment type</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:15.076" starttime="20160916 16:22:15.076"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:16.156" starttime="20160916 16:22:15.076"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>Tell us about infobeans</arg>
+</arguments>
+<msg timestamp="20160916 16:22:16.157" level="INFO">Typing text 'Tell us about infobeans' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:22:22.672" starttime="20160916 16:22:16.156"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on save</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:22.673" starttime="20160916 16:22:22.672"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20160916 16:22:22.673" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20160916 16:22:23.883" starttime="20160916 16:22:22.673"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:23.883" starttime="20160916 16:22:15.075"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:23.883" starttime="20160916 16:22:15.075"></status>
+</kw>
+<kw name="And User choose dropdown type question" library="KeywordFileRobotAppium">
+<kw name="Add dropdown ques to survey" library="dropdowntypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:23.885" starttime="20160916 16:22:23.885"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:23.886" starttime="20160916 16:22:23.885"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:25.693" starttime="20160916 16:22:23.886"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20160916 16:22:25.694" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20160916 16:22:26.014" starttime="20160916 16:22:25.694"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:26.015" starttime="20160916 16:22:26.015"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>choose dropdown</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:26.016" starttime="20160916 16:22:26.015"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Dropdown']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:27.062" starttime="20160916 16:22:26.016"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Dropdown']</arg>
+</arguments>
+<msg timestamp="20160916 16:22:27.063" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Dropdown']'.</msg>
+<status status="PASS" endtime="20160916 16:22:27.559" starttime="20160916 16:22:27.063"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:27.559" starttime="20160916 16:22:23.884"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:22:27.559" starttime="20160916 16:22:23.884"></status>
+</kw>
+<kw name="And User creates dropdown type survey" library="KeywordFileRobotAppium">
+<kw name="dropdown survey is created" library="dropdowntypequestion">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:27.562" starttime="20160916 16:22:27.561"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter 3rd ques</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:27.562" starttime="20160916 16:22:27.562"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='0']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:28.526" starttime="20160916 16:22:27.562"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='0']</arg>
+<arg>Are you a tester?</arg>
+</arguments>
+<msg timestamp="20160916 16:22:28.526" level="INFO">Typing text 'Are you a tester?' into text field 'xpath=//android.widget.EditText[@index='0']'</msg>
+<status status="PASS" endtime="20160916 16:22:34.949" starttime="20160916 16:22:28.526"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20160916 16:22:38.234" starttime="20160916 16:22:34.949"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>250</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:38.235" starttime="20160916 16:22:38.234"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:22:38.884" starttime="20160916 16:22:38.235"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20160916 16:22:38.885" level="INFO">Typing text 'Yes' into text field 'xpath=//android.widget.EditText[@index='1']'</msg>
+<status status="PASS" endtime="20160916 16:22:45.006" starttime="20160916 16:22:38.884"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:22:50.008" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:22:50.008" starttime="20160916 16:22:45.007"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20160916 16:22:53.232" starttime="20160916 16:22:50.009"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.widget.EditText</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20160916 16:22:53.232" level="INFO">Typing text 'No' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:23:00.555" starttime="20160916 16:22:53.232"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20160916 16:23:00.556" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20160916 16:23:01.406" starttime="20160916 16:23:00.555"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:23:01.406" starttime="20160916 16:22:27.561"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:23:01.406" starttime="20160916 16:22:27.560"></status>
+</kw>
+<kw name="And User choose matrix type question" library="KeywordFileRobotAppium">
+<kw name="Add Matrix/Rating ques to survey" library="matrixtypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:01.408" starttime="20160916 16:23:01.408"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:01.409" starttime="20160916 16:23:01.409"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:03.291" starttime="20160916 16:23:01.410"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20160916 16:23:03.292" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20160916 16:23:03.595" starttime="20160916 16:23:03.291"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>200</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:03.596" starttime="20160916 16:23:03.595"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Matrix / Rating']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:04.614" starttime="20160916 16:23:03.596"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Matrix / Rating']</arg>
+</arguments>
+<msg timestamp="20160916 16:23:04.614" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Matrix / Rating']'.</msg>
+<status status="PASS" endtime="20160916 16:23:05.118" starttime="20160916 16:23:04.614"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:23:05.118" starttime="20160916 16:23:01.408"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:23:05.119" starttime="20160916 16:23:01.407"></status>
+</kw>
+<kw name="And User creates matrix type survey" library="KeywordFileRobotAppium">
+<kw name="matrix survey is created" library="matrixtypequestion">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:05.166" starttime="20160916 16:23:05.165"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:06.282" starttime="20160916 16:23:05.166"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>Best feature of SM</arg>
+</arguments>
+<msg timestamp="20160916 16:23:06.283" level="INFO">Typing text 'Best feature of SM' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:23:12.687" starttime="20160916 16:23:06.282"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on Rows</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:12.687" starttime="20160916 16:23:12.687"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]</arg>
+</arguments>
+<msg timestamp="20160916 16:23:12.688" level="INFO">Clicking element 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]'.</msg>
+<status status="PASS" endtime="20160916 16:23:13.868" starttime="20160916 16:23:12.688"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter rows</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:13.868" starttime="20160916 16:23:13.868"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:23:18.870" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:23:18.870" starttime="20160916 16:23:13.869"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]/android.view.View[1]/android.widget.EditText</arg>
+</arguments>
+<msg timestamp="20160916 16:23:18.871" level="INFO">Clicking element 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]/android.view.View[1]/android.widget.EditText'.</msg>
+<status status="PASS" endtime="20160916 16:23:19.360" starttime="20160916 16:23:18.871"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]/android.view.View[1]/android.widget.EditText</arg>
+</arguments>
+<msg timestamp="20160916 16:23:19.360" level="INFO">Clear text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:23:23.973" starttime="20160916 16:23:19.360"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]/android.view.View[1]/android.widget.EditText</arg>
+<arg>Interface</arg>
+</arguments>
+<msg timestamp="20160916 16:23:23.974" level="INFO">Typing text 'Interface' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[3]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:23:31.827" starttime="20160916 16:23:23.973"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:23:36.830" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:23:36.830" starttime="20160916 16:23:31.827"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[4]/android.view.View[1]/android.widget.EditText</arg>
+</arguments>
+<msg timestamp="20160916 16:23:36.831" level="INFO">Clicking element 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[4]/android.view.View[1]/android.widget.EditText'.</msg>
+<status status="PASS" endtime="20160916 16:23:37.291" starttime="20160916 16:23:36.830"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[4]/android.view.View[1]/android.widget.EditText</arg>
+</arguments>
+<msg timestamp="20160916 16:23:37.292" level="INFO">Clear text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[4]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:23:41.952" starttime="20160916 16:23:37.292"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[4]/android.view.View[1]/android.widget.EditText</arg>
+<arg>Survey design</arg>
+</arguments>
+<msg timestamp="20160916 16:23:41.953" level="INFO">Typing text 'Survey design' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[4]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:23:50.435" starttime="20160916 16:23:41.953"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:23:55.437" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:23:55.438" starttime="20160916 16:23:50.435"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20160916 16:23:55.438" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20160916 16:23:55.943" starttime="20160916 16:23:55.438"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on columns</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:55.943" starttime="20160916 16:23:55.943"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20160916 16:23:55.944" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20160916 16:23:56.833" starttime="20160916 16:23:55.943"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:23:56.833" starttime="20160916 16:23:05.165"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:23:56.833" starttime="20160916 16:23:05.164"></status>
+</kw>
+<kw name="And User choose multipleques type" library="KeywordFileRobotAppium">
+<kw name="Add multiple ques to survey" library="multipletypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:56.879" starttime="20160916 16:23:56.879"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>200</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:56.880" starttime="20160916 16:23:56.880"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:58.931" starttime="20160916 16:23:56.880"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20160916 16:23:58.932" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20160916 16:23:59.404" starttime="20160916 16:23:58.932"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:23:59.405" starttime="20160916 16:23:59.404"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Multiple Choice']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:00.430" starttime="20160916 16:23:59.405"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Multiple Choice']</arg>
+</arguments>
+<msg timestamp="20160916 16:24:00.431" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Multiple Choice']'.</msg>
+<status status="PASS" endtime="20160916 16:24:00.967" starttime="20160916 16:24:00.430"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:24:00.967" starttime="20160916 16:23:56.878"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:24:00.967" starttime="20160916 16:23:56.834"></status>
+</kw>
+<kw name="And User creates multiple type survey" library="KeywordFileRobotAppium">
+<kw name="multiple type is created" library="multipletypequestion">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:00.969" starttime="20160916 16:24:00.969"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:02.235" starttime="20160916 16:24:00.970"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>Best Team of Infobeans?</arg>
+</arguments>
+<msg timestamp="20160916 16:24:02.236" level="INFO">Typing text 'Best Team of Infobeans?' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:24:08.752" starttime="20160916 16:24:02.236"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20160916 16:24:11.888" starttime="20160916 16:24:08.752"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>150</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:11.888" starttime="20160916 16:24:11.888"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:12.555" starttime="20160916 16:24:11.889"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter multiple ques</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:12.556" starttime="20160916 16:24:12.556"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+<arg>Survey Monkey</arg>
+</arguments>
+<msg timestamp="20160916 16:24:12.557" level="INFO">Typing text 'Survey Monkey' into text field 'xpath=//android.widget.EditText[@index='1']'</msg>
+<status status="PASS" endtime="20160916 16:24:19.101" starttime="20160916 16:24:12.556"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20160916 16:24:22.065" starttime="20160916 16:24:19.101"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.widget.EditText</arg>
+<arg>ICC</arg>
+</arguments>
+<msg timestamp="20160916 16:24:22.066" level="INFO">Typing text 'ICC' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:24:29.220" starttime="20160916 16:24:22.066"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20160916 16:24:32.248" starttime="20160916 16:24:29.220"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[6]/android.view.View[1]/android.widget.EditText</arg>
+<arg>Trex</arg>
+</arguments>
+<msg timestamp="20160916 16:24:32.249" level="INFO">Typing text 'Trex' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[6]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20160916 16:24:39.671" starttime="20160916 16:24:32.248"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20160916 16:24:42.683" starttime="20160916 16:24:39.672"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20160916 16:24:42.684" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20160916 16:24:43.574" starttime="20160916 16:24:42.684"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:24:43.574" starttime="20160916 16:24:00.969"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:24:43.575" starttime="20160916 16:24:00.968"></status>
+</kw>
+<kw name="When User clicks on home button" library="KeywordFileRobotAppium">
+<kw name="Click on home button" library="preview">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20160916 16:24:53.578" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20160916 16:24:53.579" starttime="20160916 16:24:43.576"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.RelativeLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.TextView[@index='1']</arg>
+</arguments>
+<msg timestamp="20160916 16:24:53.580" level="INFO">Clicking element 'xpath=//android.widget.RelativeLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.TextView[@index='1']'.</msg>
+<status status="PASS" endtime="20160916 16:24:54.364" starttime="20160916 16:24:53.579"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20160916 16:24:57.366" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20160916 16:24:57.366" starttime="20160916 16:24:54.365"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:24:57.367" starttime="20160916 16:24:43.576"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:24:57.367" starttime="20160916 16:24:43.575"></status>
+</kw>
+<kw name="Then User preview the result on page" library="KeywordFileRobotAppium">
+<kw name="Preview the result" library="preview">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:57.370" starttime="20160916 16:24:57.370"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Preview &amp; Test']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:24:57.533" starttime="20160916 16:24:57.370"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Preview &amp; Test']</arg>
+</arguments>
+<msg timestamp="20160916 16:24:57.533" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Preview &amp; Test']'.</msg>
+<status status="PASS" endtime="20160916 16:24:58.704" starttime="20160916 16:24:57.533"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.view.View[@content-desc='1. Tell us about infobeans']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:25:04.349" starttime="20160916 16:24:58.704"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:04.349" starttime="20160916 16:24:57.368"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:04.349" starttime="20160916 16:24:57.367"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20160916 16:25:07.775" starttime="20160916 16:25:04.350"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:07.775" starttime="20160916 16:25:04.350"></status>
+</kw>
+<doc>creation of survey</doc>
+<status status="PASS" endtime="20160916 16:25:07.775" critical="yes" starttime="20160916 16:20:51.845"></status>
+</test>
+<test id="s1-t2" name="Test_ClickCreateSurvey">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>deviceName='Android Device'</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=5.1.1</arg>
+<arg>appPackage=com.surveymonkey</arg>
+<arg>appActivity=com.surveymonkey.login.activities.LandingActivity</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:25:12.778" starttime="20160916 16:25:07.777"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20160916 16:25:22.780" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20160916 16:25:22.780" starttime="20160916 16:25:12.779"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:22.780" starttime="20160916 16:25:07.777"></status>
+</kw>
+<kw name="Given User is on create survey page again" library="KeywordFileRobotAppium">
+<kw name="Click on create survey" library="createSMsurvey">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button1</arg>
+</arguments>
+<msg timestamp="20160916 16:25:22.782" level="INFO">Clicking element 'xpath=//android.widget.Button1'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160916 16:25:24.084" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20160916 16:25:24.084" starttime="20160916 16:25:23.065"></status>
+</kw>
+<msg timestamp="20160916 16:25:24.118" level="FAIL">ValueError: Element locator 'xpath=//android.widget.Button1' did not match any elements.</msg>
+<status status="FAIL" endtime="20160916 16:25:24.118" starttime="20160916 16:25:22.782"></status>
+</kw>
+<status status="FAIL" endtime="20160916 16:25:24.119" starttime="20160916 16:25:22.782"></status>
+</kw>
+<status status="FAIL" endtime="20160916 16:25:24.119" starttime="20160916 16:25:22.781"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20160916 16:25:26.427" starttime="20160916 16:25:24.120"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:26.428" starttime="20160916 16:25:24.119"></status>
+</kw>
+<doc>click on create survey</doc>
+<status status="FAIL" endtime="20160916 16:25:26.428" critical="yes" starttime="20160916 16:25:07.776">ValueError: Element locator 'xpath=//android.widget.Button1' did not match any elements.</status>
+</test>
+<test id="s1-t3" name="Test_CreateSurveyAgain">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>deviceName='Android Device'</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=5.1.1</arg>
+<arg>appPackage=com.surveymonkey</arg>
+<arg>appActivity=com.surveymonkey.login.activities.LandingActivity</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:25:31.105" starttime="20160916 16:25:26.430"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20160916 16:25:41.108" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20160916 16:25:41.108" starttime="20160916 16:25:31.105"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:41.108" starttime="20160916 16:25:26.429"></status>
+</kw>
+<kw name="Given User do sign out" library="KeywordFileRobotAppium">
+<kw name="Do sign out" library="createSMsurvey">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:25:46.112" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:25:46.112" starttime="20160916 16:25:41.110"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.ImageButton[@content-desc='Navigate up']</arg>
+</arguments>
+<msg timestamp="20160916 16:25:46.160" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc='Navigate up']'.</msg>
+<status status="PASS" endtime="20160916 16:25:46.573" starttime="20160916 16:25:46.160"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20160916 16:25:51.574" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20160916 16:25:51.574" starttime="20160916 16:25:46.573"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:25:51.575" starttime="20160916 16:25:51.575"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:25:51.764" starttime="20160916 16:25:51.575"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']</arg>
+</arguments>
+<msg timestamp="20160916 16:25:51.765" level="INFO">Clicking element 'xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']'.</msg>
+<status status="PASS" endtime="20160916 16:25:52.185" starttime="20160916 16:25:51.764"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>50</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:25:52.186" starttime="20160916 16:25:52.185"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@content-desc='SIGN OUT']</arg>
+</arguments>
+<status status="PASS" endtime="20160916 16:25:55.470" starttime="20160916 16:25:52.186"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@content-desc='SIGN OUT']</arg>
+</arguments>
+<msg timestamp="20160916 16:25:55.471" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc='SIGN OUT']'.</msg>
+<status status="PASS" endtime="20160916 16:25:56.021" starttime="20160916 16:25:55.470"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:56.021" starttime="20160916 16:25:41.109"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:56.022" starttime="20160916 16:25:41.109"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20160916 16:25:58.372" starttime="20160916 16:25:56.023"></status>
+</kw>
+<status status="PASS" endtime="20160916 16:25:58.373" starttime="20160916 16:25:56.022"></status>
+</kw>
+<doc>Creation of survey again</doc>
+<status status="PASS" endtime="20160916 16:25:58.373" critical="yes" starttime="20160916 16:25:26.428"></status>
+</test>
+<status status="FAIL" endtime="20160916 16:25:58.374" starttime="20160916 16:20:51.599"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Create survey demo" pass="2">Create survey demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

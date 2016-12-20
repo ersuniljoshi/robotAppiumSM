@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161220 19:02:54.331" generator="Robot 3.0 (Python 2.7.6 on linux2)">
+<suite source="/home/anujita/robotScripts/Tests/Create_survey_demo.robot" id="s1" name="Create survey demo">
+<test id="s1-t1" name="Test_CreateSurvey">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>deviceName='Android Device'</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=5.1.1</arg>
+<arg>appPackage=com.surveymonkey</arg>
+<arg>appActivity=com.surveymonkey.login.activities.LandingActivity</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:02:59.290" starttime="20161220 19:02:54.408"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20161220 19:03:04.291" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161220 19:03:04.292" starttime="20161220 19:02:59.290"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:04.293" starttime="20161220 19:03:04.292"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:03:04.294" starttime="20161220 19:02:54.408"></status>
+</kw>
+<kw name="Given User do sign in" library="KeywordFileRobotAppium">
+<kw name="Do sign in" library="createSMsurvey">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='SIGN IN']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:04.297" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='SIGN IN']'.</msg>
+<status status="PASS" endtime="20161220 19:03:04.889" starttime="20161220 19:03:04.296"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/username_input']</arg>
+<arg>InfoBeansP</arg>
+</arguments>
+<msg timestamp="20161220 19:03:04.890" level="INFO">Typing text 'InfoBeansP' into text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/username_input']'</msg>
+<status status="PASS" endtime="20161220 19:03:11.381" starttime="20161220 19:03:04.890"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>InfoBeansP</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:11.575" starttime="20161220 19:03:11.382"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:11.978" starttime="20161220 19:03:11.575"></status>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']</arg>
+<arg>InfoBeans!@#</arg>
+</arguments>
+<msg timestamp="20161220 19:03:11.978" level="INFO">Typing password into text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']'</msg>
+<status status="PASS" endtime="20161220 19:03:18.462" starttime="20161220 19:03:11.978"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='SIGN IN']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:18.463" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='SIGN IN']'.</msg>
+<status status="PASS" endtime="20161220 19:03:19.313" starttime="20161220 19:03:18.462"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:03:19.314" starttime="20161220 19:03:04.295"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:03:19.314" starttime="20161220 19:03:04.295"></status>
+</kw>
+<kw name="Given User is on create survey page" library="KeywordFileRobotAppium">
+<kw name="Navigate to create survey page" library="createSMsurvey">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View/android.view.View[3]/android.widget.Button[@content-desc='CREATE SURVEY']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:30.423" starttime="20161220 19:03:19.317"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View/android.view.View[3]/android.widget.Button[@content-desc='CREATE SURVEY']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:30.424" level="INFO">Clicking element 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View/android.view.View[3]/android.widget.Button[@content-desc='CREATE SURVEY']'.</msg>
+<status status="PASS" endtime="20161220 19:03:31.020" starttime="20161220 19:03:30.424"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:03:31.021" starttime="20161220 19:03:19.316"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:03:31.021" starttime="20161220 19:03:19.315"></status>
+</kw>
+<kw name="And User creates new survey" library="KeywordFileRobotAppium">
+<kw name="Create a new survey" library="createSMsurvey">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='New Survey']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:31.575" starttime="20161220 19:03:31.024"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='New Survey']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:31.576" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='New Survey']'.</msg>
+<status status="PASS" endtime="20161220 19:03:32.218" starttime="20161220 19:03:31.575"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:32.219" level="INFO">Clicking element 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']'.</msg>
+<status status="PASS" endtime="20161220 19:03:36.001" starttime="20161220 19:03:32.218"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:36.002" level="INFO">Clear text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']'</msg>
+<status status="PASS" endtime="20161220 19:03:47.116" starttime="20161220 19:03:36.001"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']</arg>
+<arg>Survey1</arg>
+</arguments>
+<msg timestamp="20161220 19:03:47.118" level="INFO">Typing text 'Survey1' into text field 'xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']'</msg>
+<status status="PASS" endtime="20161220 19:03:53.324" starttime="20161220 19:03:47.117"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='Create']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:53.901" starttime="20161220 19:03:53.325"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on create</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:53.902" starttime="20161220 19:03:53.902"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='Create']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:53.903" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='Create']'.</msg>
+<status status="PASS" endtime="20161220 19:03:54.390" starttime="20161220 19:03:53.903"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:03:54.390" starttime="20161220 19:03:31.023"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:03:54.391" starttime="20161220 19:03:31.022"></status>
+</kw>
+<kw name="And User choose text type question" library="KeywordFileRobotAppium">
+<kw name="Add text ques to survey" library="texttypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on</arg>
+<arg>+</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:54.394" starttime="20161220 19:03:54.393"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:57.882" starttime="20161220 19:03:54.394"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:57.882" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20161220 19:03:58.203" starttime="20161220 19:03:57.882"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20161220 19:03:59.204" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161220 19:03:59.205" starttime="20161220 19:03:58.203"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>choose "text" type of ques.</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:03:59.206" starttime="20161220 19:03:59.205"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[6]/android.widget.TextView[@text='Text']</arg>
+</arguments>
+<msg timestamp="20161220 19:03:59.207" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[6]/android.widget.TextView[@text='Text']'.</msg>
+<status status="PASS" endtime="20161220 19:04:00.111" starttime="20161220 19:03:59.206"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:00.112" starttime="20161220 19:03:54.392"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:00.112" starttime="20161220 19:03:54.391"></status>
+</kw>
+<kw name="And User creates text ques survey" library="KeywordFileRobotAppium">
+<kw name="text survey is created" library="texttypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter 1st ques single text type</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:00.113" starttime="20161220 19:04:00.112"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:00.854" starttime="20161220 19:04:00.113"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>A survey about Infobeans</arg>
+</arguments>
+<msg timestamp="20161220 19:04:00.855" level="INFO">Typing text 'A survey about Infobeans' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20161220 19:04:07.801" starttime="20161220 19:04:00.855"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on save</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:07.802" starttime="20161220 19:04:07.801"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20161220 19:04:07.802" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20161220 19:04:08.735" starttime="20161220 19:04:07.802"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:08.735" starttime="20161220 19:04:00.112"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:08.735" starttime="20161220 19:04:00.112"></status>
+</kw>
+<kw name="And User choose comment type question" library="KeywordFileRobotAppium">
+<kw name="Add comment ques to survey" library="commenttypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:08.738" starttime="20161220 19:04:08.738"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:10.722" starttime="20161220 19:04:08.738"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20161220 19:04:10.723" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20161220 19:04:11.028" starttime="20161220 19:04:10.722"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>choose Comment type of ques</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:11.029" starttime="20161220 19:04:11.029"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Comment Box']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:12.046" starttime="20161220 19:04:11.029"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Comment Box']</arg>
+</arguments>
+<msg timestamp="20161220 19:04:12.047" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Comment Box']'.</msg>
+<status status="PASS" endtime="20161220 19:04:12.660" starttime="20161220 19:04:12.046"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:12.660" starttime="20161220 19:04:08.737"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:12.660" starttime="20161220 19:04:08.736"></status>
+</kw>
+<kw name="And User creates comment type survey" library="KeywordFileRobotAppium">
+<kw name="comment survey is created" library="commenttypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter 2nd ques comment type</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:12.662" starttime="20161220 19:04:12.662"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:13.796" starttime="20161220 19:04:12.662"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>Tell us about infobeans</arg>
+</arguments>
+<msg timestamp="20161220 19:04:13.796" level="INFO">Typing text 'Tell us about infobeans' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20161220 19:04:20.582" starttime="20161220 19:04:13.796"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on save</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:20.583" starttime="20161220 19:04:20.583"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20161220 19:04:20.584" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20161220 19:04:21.521" starttime="20161220 19:04:20.584"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:21.522" starttime="20161220 19:04:12.661"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:21.522" starttime="20161220 19:04:12.661"></status>
+</kw>
+<kw name="And User choose dropdown type question" library="KeywordFileRobotAppium">
+<kw name="Add dropdown ques to survey" library="dropdowntypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:21.525" starttime="20161220 19:04:21.525"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:23.133" starttime="20161220 19:04:21.526"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20161220 19:04:23.135" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20161220 19:04:23.494" starttime="20161220 19:04:23.134"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>choose dropdown</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:23.495" starttime="20161220 19:04:23.494"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Dropdown']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:24.526" starttime="20161220 19:04:23.495"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Dropdown']</arg>
+</arguments>
+<msg timestamp="20161220 19:04:24.527" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Dropdown']'.</msg>
+<status status="PASS" endtime="20161220 19:04:25.000" starttime="20161220 19:04:24.526"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:25.000" starttime="20161220 19:04:21.524"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:25.000" starttime="20161220 19:04:21.523"></status>
+</kw>
+<kw name="And User creates dropdown type survey" library="KeywordFileRobotAppium">
+<kw name="dropdown survey is created" library="dropdowntypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter 3rd ques</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:25.004" starttime="20161220 19:04:25.003"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='0']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:26.170" starttime="20161220 19:04:25.004"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='0']</arg>
+<arg>Are you a tester?</arg>
+</arguments>
+<msg timestamp="20161220 19:04:26.172" level="INFO">Typing text 'Are you a tester?' into text field 'xpath=//android.widget.EditText[@index='0']'</msg>
+<status status="PASS" endtime="20161220 19:04:32.606" starttime="20161220 19:04:26.171"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20161220 19:04:36.089" starttime="20161220 19:04:32.607"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:36.703" starttime="20161220 19:04:36.089"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20161220 19:04:36.704" level="INFO">Typing text 'Yes' into text field 'xpath=//android.widget.EditText[@index='1']'</msg>
+<status status="PASS" endtime="20161220 19:04:42.806" starttime="20161220 19:04:36.703"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20161220 19:04:47.808" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161220 19:04:47.808" starttime="20161220 19:04:42.807"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20161220 19:04:51.091" starttime="20161220 19:04:47.809"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.view.View[1]/android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:51.745" starttime="20161220 19:04:51.092"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.view.View[1]/android.widget.EditText</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20161220 19:04:51.746" level="INFO">Typing text 'No' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20161220 19:04:58.121" starttime="20161220 19:04:51.745"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20161220 19:04:58.122" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20161220 19:04:59.180" starttime="20161220 19:04:58.121"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:59.180" starttime="20161220 19:04:25.002"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:04:59.180" starttime="20161220 19:04:25.001"></status>
+</kw>
+<kw name="And User choose matrix type question" library="KeywordFileRobotAppium">
+<kw name="Add Matrix/Rating ques to survey" library="matrixtypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:04:59.184" starttime="20161220 19:04:59.183"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:01.215" starttime="20161220 19:04:59.184"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:01.216" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20161220 19:05:01.517" starttime="20161220 19:05:01.216"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Matrix / Rating']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:02.596" starttime="20161220 19:05:01.518"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Matrix / Rating']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:02.597" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Matrix / Rating']'.</msg>
+<status status="PASS" endtime="20161220 19:05:03.033" starttime="20161220 19:05:02.596"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:03.033" starttime="20161220 19:04:59.182"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:03.033" starttime="20161220 19:04:59.181"></status>
+</kw>
+<kw name="And User creates matrix type survey" library="KeywordFileRobotAppium">
+<kw name="matrix survey is created" library="matrixtypequestion">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:04.220" starttime="20161220 19:05:03.036"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>Best feature of SM</arg>
+</arguments>
+<msg timestamp="20161220 19:05:04.221" level="INFO">Typing text 'Best feature of SM' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20161220 19:05:10.679" starttime="20161220 19:05:04.220"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:10.680" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20161220 19:05:11.572" starttime="20161220 19:05:10.679"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:11.573" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20161220 19:05:12.709" starttime="20161220 19:05:11.572"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:12.709" starttime="20161220 19:05:03.035"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:12.709" starttime="20161220 19:05:03.034"></status>
+</kw>
+<kw name="And User choose multipleques type" library="KeywordFileRobotAppium">
+<kw name="Add multiple ques to survey" library="multipletypequestion">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>click on +</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:12.711" starttime="20161220 19:05:12.711"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:13.868" starttime="20161220 19:05:12.712"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:13.869" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']'.</msg>
+<status status="PASS" endtime="20161220 19:05:14.217" starttime="20161220 19:05:13.869"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Multiple Choice']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:15.226" starttime="20161220 19:05:14.217"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Multiple Choice']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:15.227" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Multiple Choice']'.</msg>
+<status status="PASS" endtime="20161220 19:05:15.659" starttime="20161220 19:05:15.227"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:15.660" starttime="20161220 19:05:12.711"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:15.660" starttime="20161220 19:05:12.710"></status>
+</kw>
+<kw name="And User creates multiple type survey" library="KeywordFileRobotAppium">
+<kw name="multiple type is created" library="multipletypequestion">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:16.896" starttime="20161220 19:05:15.662"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText</arg>
+<arg>Best Team of Infobeans?</arg>
+</arguments>
+<msg timestamp="20161220 19:05:16.896" level="INFO">Typing text 'Best Team of Infobeans?' into text field 'xpath=//android.widget.EditText'</msg>
+<status status="PASS" endtime="20161220 19:05:22.995" starttime="20161220 19:05:16.896"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20161220 19:05:26.218" starttime="20161220 19:05:22.995"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:26.873" starttime="20161220 19:05:26.218"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>enter multiple ques</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:26.874" starttime="20161220 19:05:26.874"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.EditText[@index='1']</arg>
+<arg>Survey Monkey</arg>
+</arguments>
+<msg timestamp="20161220 19:05:26.875" level="INFO">Typing text 'Survey Monkey' into text field 'xpath=//android.widget.EditText[@index='1']'</msg>
+<status status="PASS" endtime="20161220 19:05:33.611" starttime="20161220 19:05:26.875"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20161220 19:05:34.612" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161220 19:05:34.613" starttime="20161220 19:05:33.611"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.view.View[1]/android.widget.EditText</arg>
+<arg>ICC</arg>
+</arguments>
+<msg timestamp="20161220 19:05:34.613" level="INFO">Typing text 'ICC' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20161220 19:05:40.228" starttime="20161220 19:05:34.613"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20161220 19:05:41.230" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161220 19:05:41.230" starttime="20161220 19:05:40.229"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[6]/android.view.View[1]/android.view.View[1]/android.widget.EditText</arg>
+<arg>Trex</arg>
+</arguments>
+<msg timestamp="20161220 19:05:41.232" level="INFO">Typing text 'Trex' into text field 'xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[6]/android.view.View[1]/android.view.View[1]/android.widget.EditText'</msg>
+<status status="PASS" endtime="20161220 19:05:47.923" starttime="20161220 19:05:41.231"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20161220 19:05:48.925" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161220 19:05:48.925" starttime="20161220 19:05:47.924"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:48.926" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']'.</msg>
+<status status="PASS" endtime="20161220 19:05:49.412" starttime="20161220 19:05:48.926"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:49.413" starttime="20161220 19:05:15.662"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:49.413" starttime="20161220 19:05:15.661"></status>
+</kw>
+<kw name="When User clicks on home button" library="KeywordFileRobotAppium">
+<kw name="Click on home button" library="preview">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.RelativeLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.TextView[@index='1']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:51.490" starttime="20161220 19:05:49.416"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.RelativeLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.TextView[@index='1']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:51.491" level="INFO">Clicking element 'xpath=//android.widget.RelativeLayout/android.view.View/android.support.v7.widget.LinearLayoutCompat/android.widget.TextView[@index='1']'.</msg>
+<status status="PASS" endtime="20161220 19:05:52.116" starttime="20161220 19:05:51.491"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20161220 19:05:55.118" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20161220 19:05:55.118" starttime="20161220 19:05:52.117"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:55.119" starttime="20161220 19:05:49.415"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:05:55.119" starttime="20161220 19:05:49.414"></status>
+</kw>
+<kw name="Then User preview the result on page" library="KeywordFileRobotAppium">
+<kw name="Preview the result" library="preview">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Preview &amp; Test']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:05:55.309" starttime="20161220 19:05:55.122"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='Preview &amp; Test']</arg>
+</arguments>
+<msg timestamp="20161220 19:05:55.310" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Preview &amp; Test']'.</msg>
+<status status="PASS" endtime="20161220 19:05:56.446" starttime="20161220 19:05:55.309"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>A survey about Infobeans</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:06:05.303" starttime="20161220 19:05:56.447"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>A survey about Infobeans</arg>
+</arguments>
+<msg timestamp="20161220 19:06:05.628" level="INFO">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;hierarchy rotation="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][800,1280]" resource-id="" instance="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][800,1280]" resource-id="android:id/windowContentFrame" instance="1"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][800,1280]" resource-id="" instance="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="" instance="2"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="com.android.chrome:id/action_bar_root" instance="3"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="android:id/content" instance="4"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="" instance="1"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="com.android.chrome:id/compositor_view_holder" instance="0"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="" instance="1"/&gt;&lt;android.widget.FrameLayout index="1" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="" instance="5"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="" instance="6"&gt;&lt;android.webkit.WebView index="0" text="" class="android.webkit.WebView" package="com.android.chrome" content-desc="[SURVEY PREVIEW MODE] Survey1" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" scrollable="true" long-clickable="false" password="false" selected="false" bounds="[0,161][800,1280]" resource-id="" instance="0"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="true" long-clickable="false" password="false" selected="false" bounds="[0,161][800,1280]" resource-id="patas" instance="2"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][800,1280]" resource-id="" instance="3"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][800,268]" resource-id="" instance="4"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][800,231]" resource-id="" instance="5"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="Survey1" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[31,182][117,210]" resource-id="" instance="6"/&gt;&lt;/android.view.View&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[31,250][768,250]" resource-id="" instance="7"/&gt;&lt;/android.view.View&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,268][800,1280]" resource-id="" instance="8"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[42,327][757,1280]" resource-id="" instance="9"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,327][757,351]" resource-id="question-field-75236882" instance="10"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="A survey about Infobeans" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,327][757,351]" resource-id="" instance="11"/&gt;&lt;/android.view.View&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,404][757,555]" resource-id="question-field-75236916" instance="12"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,404][757,555]" resource-id="" instance="13"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="1. Tell us about infobeans" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,404][757,456]" resource-id="question-title-75236916" instance="14"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,460][757,555]" resource-id="" instance="15"&gt;&lt;android.widget.EditText index="0" text="1. Tell us about infobeans" class="android.widget.EditText" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,460][678,555]" resource-id="75236916" instance="0"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,608][757,708]" resource-id="question-field-75237004" instance="16"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,608][757,708]" resource-id="" instance="17"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="2. Are you a tester?" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,608][757,660]" resource-id="question-title-75237004" instance="18"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,664][757,708]" resource-id="" instance="19"&gt;&lt;android.widget.Spinner index="0" text="" class="android.widget.Spinner" package="com.android.chrome" content-desc="2. Are you a tester?" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,664][127,708]" resource-id="75237004" instance="0"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="3" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,761][757,939]" resource-id="question-field-75237042" instance="20"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,761][757,939]" resource-id="" instance="21"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="3. Best feature of SM" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,761][757,813]" resource-id="question-title-75237042" instance="22"/&gt;&lt;android.widget.GridView index="1" text="" class="android.widget.GridView" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,817][757,939]" resource-id="" instance="0"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,817][757,849]" resource-id="" instance="23"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc=" " checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,817][198,849]" resource-id="" instance="24"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="Column 1" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[198,817][384,849]" resource-id="" instance="25"/&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="Column 2" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[384,817][571,849]" resource-id="" instance="26"/&gt;&lt;android.view.View index="3" text="" class="android.view.View" package="com.android.chrome" content-desc="Column 3" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[571,817][757,849]" resource-id="" instance="27"/&gt;&lt;/android.view.View&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,849][757,894]" resource-id="" instance="28"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="Row 1" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,849][198,894]" resource-id="" instance="29"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[198,849][384,894]" resource-id="" instance="30"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[202,853][380,890]" resource-id="" instance="31"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Row 1 Column 1 " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[193,853][219,879]" resource-id="75237042_591929205_591929207" instance="0"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[-13068,161][-12953,-12431]" resource-id="" instance="32"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[384,849][571,894]" resource-id="" instance="33"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[388,853][567,890]" resource-id="" instance="34"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Row 1 Column 2 " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[379,853][406,879]" resource-id="75237042_591929205_591929208" instance="1"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[-12882,161][-12766,-12431]" resource-id="" instance="35"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="3" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[571,849][757,894]" resource-id="" instance="36"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[575,853][753,890]" resource-id="" instance="37"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Row 1 Column 3 " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[565,853][592,879]" resource-id="75237042_591929205_591929209" instance="2"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[-12696,161][-12580,-12431]" resource-id="" instance="38"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,894][757,939]" resource-id="" instance="39"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="Row 2" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,894][198,939]" resource-id="" instance="40"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[198,894][384,939]" resource-id="" instance="41"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[202,898][380,935]" resource-id="" instance="42"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Row 2 Column 1 " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[193,898][219,925]" resource-id="75237042_591929206_591929207" instance="3"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[-13068,161][-12953,-12386]" resource-id="" instance="43"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[384,894][571,939]" resource-id="" instance="44"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[388,898][567,935]" resource-id="" instance="45"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Row 2 Column 2 " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[379,898][406,925]" resource-id="75237042_591929206_591929208" instance="4"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[-12882,161][-12766,-12386]" resource-id="" instance="46"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="3" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[571,894][757,939]" resource-id="" instance="47"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[575,898][753,935]" resource-id="" instance="48"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Row 2 Column 3 " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[565,898][592,925]" resource-id="75237042_591929206_591929209" instance="5"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[-12696,161][-12580,-12386]" resource-id="" instance="49"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="3" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][0,161]" resource-id="" instance="50"/&gt;&lt;android.view.View index="4" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][0,161]" resource-id="" instance="51"/&gt;&lt;android.view.View index="5" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][0,161]" resource-id="" instance="52"/&gt;&lt;android.view.View index="6" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][0,161]" resource-id="" instance="53"/&gt;&lt;android.view.View index="7" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][0,161]" resource-id="" instance="54"/&gt;&lt;/android.widget.GridView&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="4" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,993][757,1188]" resource-id="question-field-75237203" instance="55"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,993][757,1188]" resource-id="" instance="56"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="4. Best Team of Infobeans?" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,993][757,1044]" resource-id="question-title-75237203" instance="57"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,1048][757,1095]" resource-id="" instance="58"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Survey Monkey " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,1059][82,1086]" resource-id="75237203_591930258" instance="6"/&gt;&lt;/android.view.View&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,1095][757,1142]" resource-id="" instance="59"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="ICC " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,1106][82,1132]" resource-id="75237203_591930259" instance="7"/&gt;&lt;/android.view.View&gt;&lt;android.view.View index="3" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,1142][757,1188]" resource-id="" instance="60"&gt;&lt;android.widget.RadioButton index="0" text="" class="android.widget.RadioButton" package="com.android.chrome" content-desc="Trex " checkable="true" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[55,1152][82,1179]" resource-id="75237203_591930260" instance="8"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="5" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[42,1241][757,1280]" resource-id="" instance="61"&gt;&lt;android.widget.Button index="0" text="" class="android.widget.Button" package="com.android.chrome" content-desc="Done" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[332,1241][467,1280]" resource-id="" instance="0"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1376][800,1408]" resource-id="" instance="62"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="Powered by" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1420][800,1408]" resource-id="" instance="63"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="SurveyMonkey" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[262,1441][537,1408]" resource-id="" instance="64"/&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,1493][800,1408]" resource-id="" instance="65"&gt;&lt;android.view.View index="0" text="" class="android.view.View" package="com.android.chrome" content-desc="See how easy it is to " checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[274,1496][418,1408]" resource-id="" instance="66"/&gt;&lt;android.view.View index="1" text="" class="android.view.View" package="com.android.chrome" content-desc="create a survey" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[416,1496][523,1408]" resource-id="" instance="67"/&gt;&lt;android.view.View index="2" text="" class="android.view.View" package="com.android.chrome" content-desc="." checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[521,1496][525,1408]" resource-id="" instance="68"/&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.view.View&gt;&lt;/android.webkit.WebView&gt;&lt;/android.widget.FrameLayout&gt;&lt;android.widget.FrameLayout index="1" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,1280]" resource-id="" instance="7"/&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.view.View&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.FrameLayout index="1" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,164]" resource-id="com.android.chrome:id/control_container" instance="8"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,33][800,164]" resource-id="com.android.chrome:id/toolbar_container" instance="9"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,86][800,161]" resource-id="com.android.chrome:id/toolbar" instance="10"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[5,86][800,161]" resource-id="" instance="2"&gt;&lt;android.widget.ImageButton index="0" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="Home" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[5,86][69,161]" resource-id="com.android.chrome:id/home_button" instance="0"/&gt;&lt;android.widget.ImageButton index="1" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="Go back" checkable="false" checked="false" clickable="true" enabled="false" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[69,86][133,161]" resource-id="com.android.chrome:id/back_button" instance="1"/&gt;&lt;android.widget.ImageButton index="2" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="Go forward" checkable="false" checked="false" clickable="true" enabled="false" focusable="false" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[133,86][197,161]" resource-id="com.android.chrome:id/forward_button" instance="2"/&gt;&lt;android.widget.ImageButton index="3" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="Stop page loading" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[197,86][261,161]" resource-id="com.android.chrome:id/refresh_button" instance="3"/&gt;&lt;android.widget.FrameLayout index="4" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[261,93][743,154]" resource-id="com.android.chrome:id/location_bar" instance="11"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[264,97][317,150]" resource-id="com.android.chrome:id/location_bar_icon" instance="12"&gt;&lt;android.widget.ImageButton index="0" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="Site information" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[264,97][317,150]" resource-id="com.android.chrome:id/security_button" instance="4"/&gt;&lt;/android.widget.FrameLayout&gt;&lt;android.widget.EditText index="1" text="https://www.surveymonkey.com/r/?sm=Dw9_2B3j38mKg8udyAJx0USwdERfPJ6ofKIFgIjlF_2Bbp4_3D" class="android.widget.EditText" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="true" password="false" selected="false" bounds="[317,101][636,146]" resource-id="com.android.chrome:id/url_bar" instance="1"/&gt;&lt;android.widget.ImageButton index="2" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="Bookmark this page" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[636,97][689,150]" resource-id="com.android.chrome:id/bookmark_button" instance="5"/&gt;&lt;android.widget.ImageButton index="3" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="Download page" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[689,97][742,150]" resource-id="com.android.chrome:id/save_offline_button" instance="6"/&gt;&lt;/android.widget.FrameLayout&gt;&lt;android.widget.FrameLayout index="5" text="" class="android.widget.FrameLayout" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[743,86][800,161]" resource-id="com.android.chrome:id/menu_button_wrapper" instance="13"&gt;&lt;android.widget.ImageButton index="0" text="" class="android.widget.ImageButton" package="com.android.chrome" content-desc="More options" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[743,86][800,161]" resource-id="com.android.chrome:id/menu_button" instance="7"/&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;android.widget.ImageView index="1" text="" class="android.widget.ImageView" package="com.android.chrome" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,161][800,164]" resource-id="com.android.chrome:id/toolbar_shadow" instance="0"/&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/hierarchy&gt;</msg>
+<msg timestamp="20161220 19:06:05.630" level="INFO">Current page contains text 'A survey about Infobeans'.</msg>
+<status status="PASS" endtime="20161220 19:06:05.630" starttime="20161220 19:06:05.303"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:05.631" starttime="20161220 19:05:55.121"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:05.631" starttime="20161220 19:05:55.120"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20161220 19:06:08.965" starttime="20161220 19:06:05.632"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:08.965" starttime="20161220 19:06:05.632"></status>
+</kw>
+<doc>creation of survey</doc>
+<status status="PASS" endtime="20161220 19:06:08.965" critical="yes" starttime="20161220 19:02:54.407"></status>
+</test>
+<test id="s1-t2" name="Test_ClickCreateSurvey">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>deviceName='Android Device'</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=5.1.1</arg>
+<arg>appPackage=com.surveymonkey</arg>
+<arg>appActivity=com.surveymonkey.login.activities.LandingActivity</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:06:14.598" starttime="20161220 19:06:08.967"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20161220 19:06:19.599" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161220 19:06:19.600" starttime="20161220 19:06:14.599"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:06:19.601" starttime="20161220 19:06:19.600"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:19.602" starttime="20161220 19:06:08.966"></status>
+</kw>
+<kw name="Given User is on create survey page again" library="KeywordFileRobotAppium">
+<kw name="Click on create survey" library="createSMsurvey">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button1</arg>
+</arguments>
+<msg timestamp="20161220 19:06:19.606" level="INFO">Clicking element 'xpath=//android.widget.Button1'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161220 19:06:21.411" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20161220 19:06:21.411" starttime="20161220 19:06:20.384"></status>
+</kw>
+<msg timestamp="20161220 19:06:21.411" level="FAIL">ValueError: Element locator 'xpath=//android.widget.Button1' did not match any elements.</msg>
+<status status="FAIL" endtime="20161220 19:06:21.411" starttime="20161220 19:06:19.605"></status>
+</kw>
+<status status="FAIL" endtime="20161220 19:06:21.412" starttime="20161220 19:06:19.604"></status>
+</kw>
+<status status="FAIL" endtime="20161220 19:06:21.412" starttime="20161220 19:06:19.602"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20161220 19:06:23.868" starttime="20161220 19:06:21.412"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:23.869" starttime="20161220 19:06:21.412"></status>
+</kw>
+<doc>click on create survey</doc>
+<status status="FAIL" endtime="20161220 19:06:23.869" critical="yes" starttime="20161220 19:06:08.966">ValueError: Element locator 'xpath=//android.widget.Button1' did not match any elements.</status>
+</test>
+<test id="s1-t3" name="Test_CreateSurveyAgain">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>deviceName='Android Device'</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=5.1.1</arg>
+<arg>appPackage=com.surveymonkey</arg>
+<arg>appActivity=com.surveymonkey.login.activities.LandingActivity</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:06:28.162" starttime="20161220 19:06:23.870"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20161220 19:06:33.164" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161220 19:06:33.164" starttime="20161220 19:06:28.163"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:06:33.166" starttime="20161220 19:06:33.165"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:33.166" starttime="20161220 19:06:23.869"></status>
+</kw>
+<kw name="Given User do sign out" library="KeywordFileRobotAppium">
+<kw name="Do sign out" library="createSMsurvey">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20161220 19:06:38.169" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161220 19:06:38.170" starttime="20161220 19:06:33.168"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.ImageButton[@content-desc='Navigate up']</arg>
+</arguments>
+<msg timestamp="20161220 19:06:38.171" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc='Navigate up']'.</msg>
+<status status="PASS" endtime="20161220 19:06:38.664" starttime="20161220 19:06:38.170"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20161220 19:06:43.666" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161220 19:06:43.667" starttime="20161220 19:06:38.665"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:06:43.942" starttime="20161220 19:06:43.667"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']</arg>
+</arguments>
+<msg timestamp="20161220 19:06:43.944" level="INFO">Clicking element 'xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']'.</msg>
+<status status="PASS" endtime="20161220 19:06:44.437" starttime="20161220 19:06:43.943"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@content-desc='SIGN OUT']</arg>
+</arguments>
+<status status="PASS" endtime="20161220 19:06:45.998" starttime="20161220 19:06:44.438"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@content-desc='SIGN OUT']</arg>
+</arguments>
+<msg timestamp="20161220 19:06:45.999" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc='SIGN OUT']'.</msg>
+<status status="PASS" endtime="20161220 19:06:46.525" starttime="20161220 19:06:45.998"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:46.526" starttime="20161220 19:06:33.168"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:46.526" starttime="20161220 19:06:33.167"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20161220 19:06:49.044" starttime="20161220 19:06:46.528"></status>
+</kw>
+<status status="PASS" endtime="20161220 19:06:49.044" starttime="20161220 19:06:46.527"></status>
+</kw>
+<doc>Creation of survey again</doc>
+<status status="PASS" endtime="20161220 19:06:49.044" critical="yes" starttime="20161220 19:06:23.869"></status>
+</test>
+<status status="FAIL" endtime="20161220 19:06:49.045" starttime="20161220 19:02:54.331"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Create survey demo" pass="2">Create survey demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
