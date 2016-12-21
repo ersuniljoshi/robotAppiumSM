@@ -3,7 +3,7 @@ Documentation  This is a basic info about the creation of surveys1
 Library  AppiumLibrary
 
 *** Variables ***
-${REMOTE_URL}  http://localhost:4723/wd/hub
+${REMOTE_URL}  http://localhost:4444/wd/hub
 
 *** Keywords ***
 Begin Test Case
