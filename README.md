@@ -35,3 +35,8 @@
 
 [Install/uninstall apps in emulator](https://drive.google.com/open?id=1I8odyn803ZRukrBf5O4uk93aap75-YK3dH3bgS2e7Ms)
 
+I have watched level-2 robot framework sessions, have automated arpprox 300 test scenarios for web automation using robot framework. The data fetching from excel sheet has been done using python with robot. Also i have done some POC's on API, XML and Database testing using robot framework
+
+
+
+I have watched youtube videos and studied about various commands of GIT, also i have implemented GIT in my two projects of web as well as mobile automation. I have also integrated GITHUB with Jenkins and publish report on Testlink
