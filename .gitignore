@@ -16,3 +16,4 @@
 *.png
 *.xml
 Results
+._*.robot
