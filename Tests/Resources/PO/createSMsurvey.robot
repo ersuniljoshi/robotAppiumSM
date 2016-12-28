@@ -1,38 +1,39 @@
 *** Settings ***
 Library  AppiumLibrary
+Resource  ../locator.robot
 
 *** Keywords ***
 
 Do sign in
-    click element  xpath=//android.widget.Button[@text='SIGN IN']
-    input text  xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/username_input']  InfoBeansP
+    click element  ${sign_in}
+    input text  ${username}  InfoBeansP
     wait until page contains  InfoBeansP
-    wait until page contains element  xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']
-    input password  xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/password_input']  InfoBeans!@#
-    click element  xpath=//android.widget.Button[@text='SIGN IN']
+    wait until page contains element  ${password}
+    input password  ${password}  InfoBeans!@#
+    click element  ${sign_in}
 Navigate to create survey page
 
-    wait until page contains element  xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View/android.view.View[3]/android.widget.Button[@content-desc='CREATE SURVEY']
-    click element  xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View/android.view.View[3]/android.widget.Button[@content-desc='CREATE SURVEY']
+    wait until page contains element  ${create_survey_button}
+    click element  ${create_survey_button}
 Create a new survey
 
-    wait until page contains element  xpath=//android.widget.Button[@text='New Survey']
-    click element  xpath=//android.widget.Button[@text='New Survey']
-    click element  xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']
-    clear text  xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']
-    input text  xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']  Survey1
-    wait until page contains element  xpath=//android.widget.Button[@text='Create']
+    wait until page contains element  ${new_survey}
+    click element  ${new_survey}
+    click element  ${new_survey_create_input_field}
+    clear text  ${new_survey_create_input_field}
+    input text  ${new_survey_create_input_field}  Survey1
+    wait until page contains element  ${new_survey_create}
     comment  click on create
-    click element  xpath=//android.widget.Button[@text='Create']
+    click element  ${new_survey_create}
 Click on create survey
-    click element  xpath=//android.widget.Button1
+    click element  ${wrong_create_survey}
 Do sign out
     sleep  5
-    click element  xpath=//android.widget.ImageButton[@content-desc='Navigate up']
+    click element  ${upper_home_button_sign_out}
     sleep  5
-    wait until page contains element  xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']
-    click element  xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']
-    wait until page contains element  xpath=//android.widget.Button[@content-desc='SIGN OUT']
-    click element  xpath=//android.widget.Button[@content-desc='SIGN OUT']
+    wait until page contains element  ${inner_icon_sign_out}
+    click element  ${inner_icon_sign_out}
+    wait until page contains element  ${sign_out}
+    click element  ${sign_out}
 
 

@@ -1,25 +1,26 @@
 *** Settings ***
 Library  AppiumLibrary
+Resource  ../locator.robot
 
 *** Keywords ***
 
 Add dropdown ques to survey
     comment  click on +
-    wait until page contains element  xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']
-    click element  xpath=//android.widget.LinearLayout[@resource-id='com.surveymonkey:id/floating_action_main_container_big']
+    wait until page contains element  ${click_on_+_icon}
+    click element  ${click_on_+_icon}
     comment  choose dropdown
-    wait until page contains element  xpath=//android.widget.TextView[@text='Dropdown']
-    click element  xpath=//android.widget.TextView[@text='Dropdown']
+    wait until page contains element  ${select_dropdown_ques}
+    click element  ${select_dropdown_ques}
 
 dropdown survey is created
     comment  enter 3rd ques
-    wait until page contains element  xpath=//android.widget.EditText[@index='0']
-    input text  xpath=//android.widget.EditText[@index='0']  Are you a tester?
+    wait until page contains element  ${edit_dropdown_ques_field}
+    input text  ${edit_dropdown_ques_field}  Are you a tester?
     hide keyboard
-    wait until page contains element  xpath=//android.widget.EditText[@index='1']
-    input text  xpath=//android.widget.EditText[@index='1']  Yes
+    wait until page contains element  ${first_option}
+    input text  ${first_option}  Yes
     sleep  5
     hide keyboard
-    wait until page contains element  xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.view.View[1]/android.widget.EditText
-    input text  xpath=//android.webkit.WebView[@content-desc='Survey Monkey']/android.view.View[5]/android.view.View[1]/android.view.View[1]/android.widget.EditText  No
-    click element  xpath=//android.widget.TextView[@resource-id='com.surveymonkey:id/action_save']
+    wait until page contains element  ${second_option}
+    input text  ${second_option}  No
+    click element  ${save_button}
