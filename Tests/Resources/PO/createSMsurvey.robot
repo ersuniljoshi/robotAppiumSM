@@ -12,11 +12,9 @@ Do sign in
     input password  ${password}  InfoBeans!@#
     click element  ${sign_in}
 Navigate to create survey page
-
     wait until page contains element  ${create_survey_button}
     click element  ${create_survey_button}
 Create a new survey
-
     wait until page contains element  ${new_survey}
     click element  ${new_survey}
     click element  ${new_survey_create_input_field}
