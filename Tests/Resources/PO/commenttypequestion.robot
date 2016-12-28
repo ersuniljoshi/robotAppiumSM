@@ -4,8 +4,6 @@ Resource  ../locator.robot
 
 *** Keywords ***
 
-
-
 Add comment ques to survey
     comment  click on +
     wait until page contains element  ${click_on_+_icon}
@@ -13,6 +11,7 @@ Add comment ques to survey
     comment  choose Comment type of ques
     wait until page contains element  ${select_comment_type_ques}
     click element  ${select_comment_type_ques}
+    
 comment survey is created
     comment  enter 2nd ques comment type
     wait until page contains element  ${edit_ques_field}
