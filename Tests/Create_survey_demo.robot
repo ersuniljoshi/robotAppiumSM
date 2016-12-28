@@ -8,7 +8,6 @@ Test Teardown  End Test Case
 *** Variables ***
 ${REMOTE_URL}  http://localhost:4444/wd/hub
 
-
 *** Test Cases ***
 
 Test_CreateSurvey
