@@ -5,7 +5,6 @@ Resource  ../locator.robot
 *** Keywords ***
 
 Add multiple ques to survey
-
     comment  click on +
     wait until page contains element  ${click_on_+_icon}
     click element  ${click_on_+_icon}
