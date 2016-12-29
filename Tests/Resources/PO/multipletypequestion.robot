@@ -3,14 +3,14 @@ Library  AppiumLibrary
 Resource  ../locator.robot
 
 *** Keywords ***
-
-Add multiple ques to survey
+Add Multiple Question To Survey
     comment  click on +
     wait until page contains element  ${click_on_+_icon}
     click element  ${click_on_+_icon}
     wait until page contains element  ${select_multiple_type_ques}
     click element  ${select_multiple_type_ques}
-multiple type is created
+
+Multiple Type Is Created
     wait until page contains element  ${edit_ques_field}
     input text  ${edit_ques_field}  Best Team of Infobeans?
     hide keyboard
@@ -23,4 +23,3 @@ multiple type is created
     input text   ${third_option}  Trex
     sleep  1
     click element  ${save_button}
-

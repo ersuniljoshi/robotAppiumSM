@@ -3,8 +3,7 @@ Library  AppiumLibrary
 Resource  ../locator.robot
 
 *** Keywords ***
-
-Add dropdown ques to survey
+Add Dropdown Question To Survey
     comment  click on +
     wait until page contains element  ${click_on_+_icon}
     click element  ${click_on_+_icon}
@@ -12,7 +11,7 @@ Add dropdown ques to survey
     wait until page contains element  ${select_dropdown_ques}
     click element  ${select_dropdown_ques}
 
-dropdown survey is created
+Dropdown Survey Is Created
     comment  enter 3rd ques
     wait until page contains element  ${edit_dropdown_ques_field}
     input text  ${edit_dropdown_ques_field}  Are you a tester?
@@ -24,4 +23,3 @@ dropdown survey is created
     wait until page contains element  ${second_option}
     input text  ${second_option}  No
     click element  ${save_button}
-    

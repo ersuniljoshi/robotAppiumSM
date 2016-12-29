@@ -3,18 +3,19 @@ Library  AppiumLibrary
 Resource  ../locator.robot
 
 *** Keywords ***
-
-Do sign in
+Do Sign In
     click element  ${sign_in}
     input text  ${username}  InfoBeansP
     wait until page contains  InfoBeansP
     wait until page contains element  ${password}
     input password  ${password}  InfoBeans!@#
     click element  ${sign_in}
-Navigate to create survey page
+
+Navigate To Create Survey Page
     wait until page contains element  ${create_survey_button}
     click element  ${create_survey_button}
-Create a new survey
+
+Create A New Survey
     wait until page contains element  ${new_survey}
     click element  ${new_survey}
     click element  ${new_survey_create_input_field}
@@ -23,9 +24,11 @@ Create a new survey
     wait until page contains element  ${new_survey_create}
     comment  click on create
     click element  ${new_survey_create}
-Click on create survey
+
+Click On Create Survey
     click element  ${wrong_create_survey}
-Do sign out
+
+Do Sign Out
     sleep  5
     click element  ${upper_home_button_sign_out}
     sleep  5
@@ -33,5 +36,3 @@ Do sign out
     click element  ${inner_icon_sign_out}
     wait until page contains element  ${sign_out}
     click element  ${sign_out}
-
-

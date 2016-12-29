@@ -12,52 +12,52 @@ Resource  ./PO/preview.robot
 
 *** Keywords ***
 User do sign in
-    createSMsurvey.Do sign in
+    createSMsurvey.Do Sign In
 
 User is on create survey page
-    createSMsurvey.Navigate to create survey page
+    createSMsurvey.Navigate To Create Survey Page
 
 User creates new survey
-    createSMsurvey.Create a new survey
+    createSMsurvey.Create A New Survey
 
 User choose text type question
-    texttypequestion.Add text ques to survey
+    texttypequestion.Add Text Question To Survey
 
 User creates text ques survey
-    texttypequestion.text survey is created
+    texttypequestion.Text Survey Is Created
 
 User choose comment type question
-    commenttypequestion.Add comment ques to survey
+    commenttypequestion.Add Comment Question To Survey
 
 User creates comment type survey
-    commenttypequestion.comment survey is created
+    commenttypequestion.Comment Survey Is Created
 
 User choose dropdown type question
-    dropdowntypequestion.Add dropdown ques to survey
+    dropdowntypequestion.Add Dropdown Question To Survey
 
 User creates dropdown type survey
-     dropdowntypequestion.dropdown survey is created
+     dropdowntypequestion.Dropdown Survey Is Created
 
 User choose matrix type question
-    matrixtypequestion.Add Matrix/Rating ques to survey
+    matrixtypequestion.Add Matrix-Rating Question To Survey
 
 User creates matrix type survey
-     matrixtypequestion.matrix survey is created
+     matrixtypequestion.Matrix Survey Is Created
 
 User choose multipleques type
-    multipletypequestion.Add multiple ques to survey
+    multipletypequestion.Add Multiple Question To Survey
 
 User creates multiple type survey
-     multipletypequestion.multiple type is created
+     multipletypequestion.Multiple Type Is Created
 
 User is on create survey page again
-    createSMsurvey.Click on create survey
+    createSMsurvey.Click On Create Survey
 
 User clicks on home button
-    preview.Click on home button
+    preview.Click On Home Button
 
 User preview the result on page
-    preview.Preview the result
+    preview.Preview The Result
 
 User do sign out
-    createSMsurvey.Do sign out
+    createSMsurvey.Do Sign Out

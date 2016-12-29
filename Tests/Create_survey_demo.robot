@@ -5,11 +5,7 @@ Resource  Resources/Common.robot
 Test Setup  Begin Test Case
 Test Teardown  End Test Case
 
-*** Variables ***
-${REMOTE_URL}  http://localhost:4444/wd/hub
-
 *** Test Cases ***
-
 Test_CreateSurvey
 
     [Documentation]  creation of survey
@@ -32,13 +28,9 @@ Test_CreateSurvey
 Test_ClickCreateSurvey
 
     [Documentation]  click on create survey
-
     Given User is on create survey page again
 
 Test_CreateSurveyAgain
 
     [Documentation]  Creation of survey again
-
     Given User do sign out
-
-

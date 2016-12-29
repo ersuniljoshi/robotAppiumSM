@@ -1,5 +1,4 @@
 *** Settings ***
-Documentation  This is a basic info about the creation of surveys1
 Library  AppiumLibrary
 
 *** Variables ***
