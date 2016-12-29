@@ -24,3 +24,4 @@ dropdown survey is created
     wait until page contains element  ${second_option}
     input text  ${second_option}  No
     click element  ${save_button}
+    

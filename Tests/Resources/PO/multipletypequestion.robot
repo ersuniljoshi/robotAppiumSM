@@ -23,3 +23,4 @@ multiple type is created
     input text   ${third_option}  Trex
     sleep  1
     click element  ${save_button}
+
