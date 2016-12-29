@@ -3,7 +3,6 @@ Library  AppiumLibrary
 Resource  ../locator.robot
 
 *** Keywords ***
-
 Add Comment Question To Survey
     comment  click on +
     wait until page contains element  ${click_on_+_icon}
