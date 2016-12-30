@@ -12,3 +12,9 @@
 *.swp
 *.swo
 *.pyo
+*.html
+*.png
+*.xml
+Results
+._*.robot
+*.css
