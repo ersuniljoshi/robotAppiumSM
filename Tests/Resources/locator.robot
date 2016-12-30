@@ -23,7 +23,7 @@ ${create_survey_button}  xpath=//android.webkit.WebView[@content-desc='Survey Mo
 ${new_survey}  xpath=//android.widget.Button[@text='New Survey']
 ${new_survey_create_input_field}  xpath=//android.widget.EditText[@resource-id='com.surveymonkey:id/input_field']
 ${new_survey_create}  xpath=//android.widget.Button[@text='Create']
-${wrong_create_survey}  xpath=//android.widget.Button1
+${wrong_create_survey}  xpath=//android.widget.Button
 ${upper_home_button_sign_out}  xpath=//android.widget.ImageButton[@content-desc='Navigate up']
 ${inner_icon_sign_out}  xpath=//android.widget.RelativeLayout/android.widget.TextView[@text='y']
 ${sign_out}  xpath=//android.widget.Button[@content-desc='SIGN OUT']

@@ -28,7 +28,9 @@ Test_CreateSurvey
 Test_ClickCreateSurvey
 
     [Documentation]  click on create survey
-    Given User is on create survey page again
+    #Given User is on create survey page again
+    Given User creates new survey
+
 
 Test_CreateSurveyAgain
 

@@ -7,7 +7,6 @@ Resource  ./PO/commenttypequestion.robot
 Resource  ./PO/dropdowntypequestion.robot
 Resource  ./PO/matrixtypequestion.robot
 Resource  ./PO/multipletypequestion.robot
-Resource  ./PO/landingpage.robot
 Resource  ./PO/preview.robot
 
 *** Keywords ***
