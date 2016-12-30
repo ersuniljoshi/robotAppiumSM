@@ -14,4 +14,3 @@ Matrix Survey Is Created
     wait until page contains element  ${edit_ques_field}
     input text  ${edit_ques_field}  Best feature of SM
     click element  ${save_button}
-    click element  ${save_button}
