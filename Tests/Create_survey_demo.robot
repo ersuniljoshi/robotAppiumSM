@@ -31,7 +31,6 @@ Test_ClickCreateSurvey
     Given User is on create survey page
     And User creates new survey
 
-
 Test_CreateSurveyAgain
 
     [Documentation]  Creation of survey again
