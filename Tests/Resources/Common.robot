@@ -4,7 +4,7 @@ Library  String
 
 *** Variables ***
 ${hub_url}  http://localhost:4444/wd/hub
-${deviceName}
+${deviceName}  Android Device
 ${platformName}  Android
 ${platformVersion}  5.1.1
 

@@ -34,3 +34,10 @@
 
 
 [Install/uninstall apps in emulator](https://drive.google.com/open?id=1I8odyn803ZRukrBf5O4uk93aap75-YK3dH3bgS2e7Ms)
+
+
+##COMMAND TO RUN SCRIPT
+
+```
+robot --variable hub_url:'hub_url/wd/hub' --variable deviceName:'Android Device' --variable platformName:Android --variable platformVersion:5.1.1 -x junit.xml testfile-path
+```
